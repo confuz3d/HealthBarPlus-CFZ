@@ -67,7 +67,7 @@ public class HBPConfig {
             configFile.getParentFile().mkdir();
             configFile.createNewFile();
             OutputStream output = new FileOutputStream(configFile, false);
-            InputStream input = plugin.getResource("defaults" + File.separator + configFile.getName());
+            InputStream input = plugin.getResource("defaults" + File.separator + "config.yml");
             byte[] buf = new byte[8192];
             while (true) {
                 int length = input.read(buf);
